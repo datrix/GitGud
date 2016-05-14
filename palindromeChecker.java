@@ -45,11 +45,19 @@ public class PalindromeChecker
     }
     
     public static String revString(String word){           // Reverse a String
-        //TODO - Jeff
+        String wordRev = "";
+        for (int i = word.length() - 1; i >= 0; i--){
+            wordRev = wordRev + word.charAt(i);
+        }
+        return wordRev;
     }
     
     public static String[] revArray(String[] sent){         //Reverse an Array
-       //TODO - Jeff
+       String[] sentRev = new String[sent.length];
+       for (int i = 0; i < sent.length; i++){
+           sentRev[i] = sent[sent.length - i - 1];
+       }
+       return sentRev;
     }
     
     public static String concatArray(String[] sent){        //Concactenate all strings in an array
