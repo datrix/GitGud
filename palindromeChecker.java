@@ -53,6 +53,13 @@ public class PalindromeChecker
     }
     
     public static String concatArray(String[] sent){        //Concactenate all strings in an array
-        //TODO - Rach
+        String result = "";
+        if(sent.length > 0){
+            result = sent[0];
+            for (int i = 1; i < sent.length; i++){
+                result = result + sent[i];
+            }
+        }
+        return result;
     }
 }
